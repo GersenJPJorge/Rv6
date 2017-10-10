@@ -1,0 +1,31 @@
+<div class="jumbotron">
+    <h1 class="text-center">Dados do CPF</h1>
+    <hr />
+
+    <form>
+        <div class="form-group">
+            <label class="control-label" for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" value="{{ user.user.name }}">
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="email">Email</label>
+            <input type="text" class="form-control" id="email" value="{{ user.user.email }}">
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="dateOfBirth">Data de nascimento</label>
+            <input type="text" class="form-control" id="dateOfBirth" value="{{ user.user.dateOfBirth }}">
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="celularPhone">Celular</label>
+            <input type="text" class="form-control" id="celularPhone" value="{{ user.user.celularPhone }}">
+        </div>
+        <hr />
+        <div class="form-group">
+            <!--            <button [routerLink]="['']" class="btn btn-primary">Home</button> -->
+            <button [routerLink]="['/logout']" class="btn btn-primary">Home</button>
+            <button [routerLink]="['']" class="btn btn-primary">Voltar</button>
+            <img *ngIf=" loading " src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
+            />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+.header {
+    background-color: blue;
+}
+
+body {
+    background-color: #FF0062;
+}
+
+.foot {
+    background-color: #000;
+}
